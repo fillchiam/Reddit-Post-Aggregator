@@ -7,12 +7,6 @@ from tkinter import *
 from tkinter import ttk
 from RedditNewsAggregator import FindPosts
 
-import praw
-
-user_agent = "linux:PostAggregatorTest:v0.1 (by /u/Fillchiam)"
-r = praw.Reddit(user_agent=user_agent)
-submissions = r.get_subreddit('news').get_hot(limit=5)
-
 root = Tk()
 root.title("Reddit Post Aggregator")
 
