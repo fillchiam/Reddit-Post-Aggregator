@@ -21,26 +21,8 @@ mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
 mainframe.columnconfigure(0, weight=1)
 mainframe.rowconfigure(0, weight=1)
 
-# labeltext = FindPosts.lister()
-
-
-# def lister():
-#     for x in submissions:
-#         result = (str(x))
-#         resultlist.append(result + '\n')
-
 
 FindPosts.lister()
-
-
-
-# lister()
-# label = ttk.Label(mainframe, text="Stuff!")
-# label.grid(column=1, row=1, sticky=N)
-# labelchange = StringVar(value=resultlist)
-# label['textvariable'] = labelchange
-# for item in resultlist: labelchange.set(str(item))
-
 
 for item in FindPosts.resultlist:
     print(item)
